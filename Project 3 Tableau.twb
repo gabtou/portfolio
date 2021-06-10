@@ -1,0 +1,2739 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook original-version='18.1' source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nhl' inline='true' name='federated.1mc7fa50cdg0b91a5e66k1v2duw8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nhl' name='textscan.0t4unyb12y3lcl1efegnd1b4wwqt'>
+            <connection class='textscan' directory='C:/Users/Gabriel/Desktop' filename='nhl.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0t4unyb12y3lcl1efegnd1b4wwqt' name='nhl.csv' table='[nhl#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Salary' ordinal='0' />
+            <column datatype='date' name='Born' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='Pr/St' ordinal='3' />
+            <column datatype='string' name='Cntry' ordinal='4' />
+            <column datatype='string' name='Nat' ordinal='5' />
+            <column datatype='integer' name='Ht' ordinal='6' />
+            <column datatype='integer' name='Wt' ordinal='7' />
+            <column datatype='integer' name='DftYr' ordinal='8' />
+            <column datatype='integer' name='DftRd' ordinal='9' />
+            <column datatype='integer' name='Ovrl' ordinal='10' />
+            <column datatype='string' name='Hand' ordinal='11' />
+            <column datatype='string' name='Last Name' ordinal='12' />
+            <column datatype='string' name='First Name' ordinal='13' />
+            <column datatype='string' name='Position' ordinal='14' />
+            <column datatype='string' name='Team' ordinal='15' />
+            <column datatype='integer' name='GP' ordinal='16' />
+            <column datatype='integer' name='G' ordinal='17' />
+            <column datatype='integer' name='A' ordinal='18' />
+            <column datatype='integer' name='A1' ordinal='19' />
+            <column datatype='integer' name='A2' ordinal='20' />
+            <column datatype='integer' name='PTS' ordinal='21' />
+            <column datatype='integer' name='+/-' ordinal='22' />
+            <column datatype='real' name='E+/-' ordinal='23' />
+            <column datatype='integer' name='PIM' ordinal='24' />
+            <column datatype='integer' name='Shifts' ordinal='25' />
+            <column datatype='integer' name='TOI' ordinal='26' />
+            <column datatype='real' name='TOIX' ordinal='27' />
+            <column datatype='real' name='TOI/GP' ordinal='28' />
+            <column datatype='real' name='TOI/GP 1' ordinal='29' />
+            <column datatype='real' name='TOI%' ordinal='30' />
+            <column datatype='real' name='IPP%' ordinal='31' />
+            <column datatype='real' name='SH%' ordinal='32' />
+            <column datatype='real' name='SV%' ordinal='33' />
+            <column datatype='integer' name='PDO' ordinal='34' />
+            <column datatype='real' name='F/60' ordinal='35' />
+            <column datatype='real' name='A/60' ordinal='36' />
+            <column datatype='real' name='Pct%' ordinal='37' />
+            <column datatype='integer' name='Diff' ordinal='38' />
+            <column datatype='real' name='Diff/60' ordinal='39' />
+            <column datatype='integer' name='iCF' ordinal='40' />
+            <column datatype='integer' name='iCF 1' ordinal='41' />
+            <column datatype='integer' name='iFF' ordinal='42' />
+            <column datatype='integer' name='iSF' ordinal='43' />
+            <column datatype='integer' name='iSF 1' ordinal='44' />
+            <column datatype='integer' name='iSF 2' ordinal='45' />
+            <column datatype='real' name='ixG' ordinal='46' />
+            <column datatype='integer' name='iSCF' ordinal='47' />
+            <column datatype='integer' name='iRB' ordinal='48' />
+            <column datatype='integer' name='iRS' ordinal='49' />
+            <column datatype='integer' name='iDS' ordinal='50' />
+            <column datatype='real' name='sDist' ordinal='51' />
+            <column datatype='real' name='sDist 1' ordinal='52' />
+            <column datatype='real' name='Pass' ordinal='53' />
+            <column datatype='integer' name='iHF' ordinal='54' />
+            <column datatype='integer' name='iHF 1' ordinal='55' />
+            <column datatype='integer' name='iHA' ordinal='56' />
+            <column datatype='integer' name='iHDf' ordinal='57' />
+            <column datatype='integer' name='iMiss' ordinal='58' />
+            <column datatype='integer' name='iGVA' ordinal='59' />
+            <column datatype='integer' name='iTKA' ordinal='60' />
+            <column datatype='integer' name='iBLK' ordinal='61' />
+            <column datatype='integer' name='iGVA 1' ordinal='62' />
+            <column datatype='integer' name='iTKA 1' ordinal='63' />
+            <column datatype='integer' name='iBLK 1' ordinal='64' />
+            <column datatype='real' name='BLK%' ordinal='65' />
+            <column datatype='integer' name='iFOW' ordinal='66' />
+            <column datatype='integer' name='iFOL' ordinal='67' />
+            <column datatype='integer' name='iFOW 1' ordinal='68' />
+            <column datatype='integer' name='iFOL 1' ordinal='69' />
+            <column datatype='real' name='FO%' ordinal='70' />
+            <column datatype='real' name='%FOT' ordinal='71' />
+            <column datatype='integer' name='dzFOW' ordinal='72' />
+            <column datatype='integer' name='dzFOL' ordinal='73' />
+            <column datatype='integer' name='nzFOW' ordinal='74' />
+            <column datatype='integer' name='nzFOL' ordinal='75' />
+            <column datatype='integer' name='ozFOW' ordinal='76' />
+            <column datatype='integer' name='ozFOL' ordinal='77' />
+            <column datatype='integer' name='FOW.Up' ordinal='78' />
+            <column datatype='integer' name='FOL.Up' ordinal='79' />
+            <column datatype='integer' name='FOW.Down' ordinal='80' />
+            <column datatype='integer' name='FOL.Down' ordinal='81' />
+            <column datatype='integer' name='FOW.Close' ordinal='82' />
+            <column datatype='integer' name='FOL.Close' ordinal='83' />
+            <column datatype='integer' name='OTG' ordinal='84' />
+            <column datatype='integer' name='1G' ordinal='85' />
+            <column datatype='integer' name='GWG' ordinal='86' />
+            <column datatype='integer' name='ENG' ordinal='87' />
+            <column datatype='integer' name='PSG' ordinal='88' />
+            <column datatype='integer' name='PSA' ordinal='89' />
+            <column datatype='integer' name='G.Bkhd' ordinal='90' />
+            <column datatype='integer' name='G.Dflct' ordinal='91' />
+            <column datatype='integer' name='G.Slap' ordinal='92' />
+            <column datatype='integer' name='G.Snap' ordinal='93' />
+            <column datatype='integer' name='G.Tip' ordinal='94' />
+            <column datatype='integer' name='G.Wrap' ordinal='95' />
+            <column datatype='integer' name='G.Wrst' ordinal='96' />
+            <column datatype='integer' name='CBar ' ordinal='97' />
+            <column datatype='integer' name='Post' ordinal='98' />
+            <column datatype='integer' name='Over' ordinal='99' />
+            <column datatype='integer' name='Wide' ordinal='100' />
+            <column datatype='integer' name='S.Bkhd' ordinal='101' />
+            <column datatype='integer' name='S.Dflct' ordinal='102' />
+            <column datatype='integer' name='S.Slap' ordinal='103' />
+            <column datatype='integer' name='S.Snap' ordinal='104' />
+            <column datatype='integer' name='S.Tip' ordinal='105' />
+            <column datatype='integer' name='S.Wrap' ordinal='106' />
+            <column datatype='integer' name='S.Wrst' ordinal='107' />
+            <column datatype='integer' name='iPenT' ordinal='108' />
+            <column datatype='integer' name='iPenD' ordinal='109' />
+            <column datatype='integer' name='iPENT' ordinal='110' />
+            <column datatype='integer' name='iPEND' ordinal='111' />
+            <column datatype='integer' name='iPenDf' ordinal='112' />
+            <column datatype='real' name='NPD' ordinal='113' />
+            <column datatype='integer' name='Min' ordinal='114' />
+            <column datatype='integer' name='Maj' ordinal='115' />
+            <column datatype='integer' name='Match' ordinal='116' />
+            <column datatype='integer' name='Misc' ordinal='117' />
+            <column datatype='integer' name='Game' ordinal='118' />
+            <column datatype='integer' name='CF' ordinal='119' />
+            <column datatype='integer' name='CA' ordinal='120' />
+            <column datatype='integer' name='FF' ordinal='121' />
+            <column datatype='integer' name='FA' ordinal='122' />
+            <column datatype='integer' name='SF' ordinal='123' />
+            <column datatype='integer' name='SA' ordinal='124' />
+            <column datatype='real' name='xGF' ordinal='125' />
+            <column datatype='real' name='xGA' ordinal='126' />
+            <column datatype='integer' name='SCF' ordinal='127' />
+            <column datatype='integer' name='SCA' ordinal='128' />
+            <column datatype='integer' name='GF' ordinal='129' />
+            <column datatype='integer' name='GA' ordinal='130' />
+            <column datatype='integer' name='RBF' ordinal='131' />
+            <column datatype='integer' name='RBA' ordinal='132' />
+            <column datatype='integer' name='RSF' ordinal='133' />
+            <column datatype='integer' name='RSA' ordinal='134' />
+            <column datatype='integer' name='DSF' ordinal='135' />
+            <column datatype='integer' name='DSA' ordinal='136' />
+            <column datatype='integer' name='FOW' ordinal='137' />
+            <column datatype='integer' name='FOL' ordinal='138' />
+            <column datatype='integer' name='HF' ordinal='139' />
+            <column datatype='integer' name='HA' ordinal='140' />
+            <column datatype='integer' name='GVA' ordinal='141' />
+            <column datatype='integer' name='TKA' ordinal='142' />
+            <column datatype='integer' name='PENT' ordinal='143' />
+            <column datatype='integer' name='PEND' ordinal='144' />
+            <column datatype='real' name='OPS' ordinal='145' />
+            <column datatype='real' name='DPS' ordinal='146' />
+            <column datatype='real' name='PS' ordinal='147' />
+            <column datatype='real' name='OTOI' ordinal='148' />
+            <column datatype='integer' name='Grit' ordinal='149' />
+            <column datatype='real' name='DAP' ordinal='150' />
+            <column datatype='real' name='Pace' ordinal='151' />
+            <column datatype='real' name='GS' ordinal='152' />
+            <column datatype='real' name='GS/G' ordinal='153' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0t4unyb12y3lcl1efegnd1b4wwqt' name='nhl.csv' table='[nhl#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Salary' ordinal='0' />
+            <column datatype='date' name='Born' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='Pr/St' ordinal='3' />
+            <column datatype='string' name='Cntry' ordinal='4' />
+            <column datatype='string' name='Nat' ordinal='5' />
+            <column datatype='integer' name='Ht' ordinal='6' />
+            <column datatype='integer' name='Wt' ordinal='7' />
+            <column datatype='integer' name='DftYr' ordinal='8' />
+            <column datatype='integer' name='DftRd' ordinal='9' />
+            <column datatype='integer' name='Ovrl' ordinal='10' />
+            <column datatype='string' name='Hand' ordinal='11' />
+            <column datatype='string' name='Last Name' ordinal='12' />
+            <column datatype='string' name='First Name' ordinal='13' />
+            <column datatype='string' name='Position' ordinal='14' />
+            <column datatype='string' name='Team' ordinal='15' />
+            <column datatype='integer' name='GP' ordinal='16' />
+            <column datatype='integer' name='G' ordinal='17' />
+            <column datatype='integer' name='A' ordinal='18' />
+            <column datatype='integer' name='A1' ordinal='19' />
+            <column datatype='integer' name='A2' ordinal='20' />
+            <column datatype='integer' name='PTS' ordinal='21' />
+            <column datatype='integer' name='+/-' ordinal='22' />
+            <column datatype='real' name='E+/-' ordinal='23' />
+            <column datatype='integer' name='PIM' ordinal='24' />
+            <column datatype='integer' name='Shifts' ordinal='25' />
+            <column datatype='integer' name='TOI' ordinal='26' />
+            <column datatype='real' name='TOIX' ordinal='27' />
+            <column datatype='real' name='TOI/GP' ordinal='28' />
+            <column datatype='real' name='TOI/GP 1' ordinal='29' />
+            <column datatype='real' name='TOI%' ordinal='30' />
+            <column datatype='real' name='IPP%' ordinal='31' />
+            <column datatype='real' name='SH%' ordinal='32' />
+            <column datatype='real' name='SV%' ordinal='33' />
+            <column datatype='integer' name='PDO' ordinal='34' />
+            <column datatype='real' name='F/60' ordinal='35' />
+            <column datatype='real' name='A/60' ordinal='36' />
+            <column datatype='real' name='Pct%' ordinal='37' />
+            <column datatype='integer' name='Diff' ordinal='38' />
+            <column datatype='real' name='Diff/60' ordinal='39' />
+            <column datatype='integer' name='iCF' ordinal='40' />
+            <column datatype='integer' name='iCF 1' ordinal='41' />
+            <column datatype='integer' name='iFF' ordinal='42' />
+            <column datatype='integer' name='iSF' ordinal='43' />
+            <column datatype='integer' name='iSF 1' ordinal='44' />
+            <column datatype='integer' name='iSF 2' ordinal='45' />
+            <column datatype='real' name='ixG' ordinal='46' />
+            <column datatype='integer' name='iSCF' ordinal='47' />
+            <column datatype='integer' name='iRB' ordinal='48' />
+            <column datatype='integer' name='iRS' ordinal='49' />
+            <column datatype='integer' name='iDS' ordinal='50' />
+            <column datatype='real' name='sDist' ordinal='51' />
+            <column datatype='real' name='sDist 1' ordinal='52' />
+            <column datatype='real' name='Pass' ordinal='53' />
+            <column datatype='integer' name='iHF' ordinal='54' />
+            <column datatype='integer' name='iHF 1' ordinal='55' />
+            <column datatype='integer' name='iHA' ordinal='56' />
+            <column datatype='integer' name='iHDf' ordinal='57' />
+            <column datatype='integer' name='iMiss' ordinal='58' />
+            <column datatype='integer' name='iGVA' ordinal='59' />
+            <column datatype='integer' name='iTKA' ordinal='60' />
+            <column datatype='integer' name='iBLK' ordinal='61' />
+            <column datatype='integer' name='iGVA 1' ordinal='62' />
+            <column datatype='integer' name='iTKA 1' ordinal='63' />
+            <column datatype='integer' name='iBLK 1' ordinal='64' />
+            <column datatype='real' name='BLK%' ordinal='65' />
+            <column datatype='integer' name='iFOW' ordinal='66' />
+            <column datatype='integer' name='iFOL' ordinal='67' />
+            <column datatype='integer' name='iFOW 1' ordinal='68' />
+            <column datatype='integer' name='iFOL 1' ordinal='69' />
+            <column datatype='real' name='FO%' ordinal='70' />
+            <column datatype='real' name='%FOT' ordinal='71' />
+            <column datatype='integer' name='dzFOW' ordinal='72' />
+            <column datatype='integer' name='dzFOL' ordinal='73' />
+            <column datatype='integer' name='nzFOW' ordinal='74' />
+            <column datatype='integer' name='nzFOL' ordinal='75' />
+            <column datatype='integer' name='ozFOW' ordinal='76' />
+            <column datatype='integer' name='ozFOL' ordinal='77' />
+            <column datatype='integer' name='FOW.Up' ordinal='78' />
+            <column datatype='integer' name='FOL.Up' ordinal='79' />
+            <column datatype='integer' name='FOW.Down' ordinal='80' />
+            <column datatype='integer' name='FOL.Down' ordinal='81' />
+            <column datatype='integer' name='FOW.Close' ordinal='82' />
+            <column datatype='integer' name='FOL.Close' ordinal='83' />
+            <column datatype='integer' name='OTG' ordinal='84' />
+            <column datatype='integer' name='1G' ordinal='85' />
+            <column datatype='integer' name='GWG' ordinal='86' />
+            <column datatype='integer' name='ENG' ordinal='87' />
+            <column datatype='integer' name='PSG' ordinal='88' />
+            <column datatype='integer' name='PSA' ordinal='89' />
+            <column datatype='integer' name='G.Bkhd' ordinal='90' />
+            <column datatype='integer' name='G.Dflct' ordinal='91' />
+            <column datatype='integer' name='G.Slap' ordinal='92' />
+            <column datatype='integer' name='G.Snap' ordinal='93' />
+            <column datatype='integer' name='G.Tip' ordinal='94' />
+            <column datatype='integer' name='G.Wrap' ordinal='95' />
+            <column datatype='integer' name='G.Wrst' ordinal='96' />
+            <column datatype='integer' name='CBar ' ordinal='97' />
+            <column datatype='integer' name='Post' ordinal='98' />
+            <column datatype='integer' name='Over' ordinal='99' />
+            <column datatype='integer' name='Wide' ordinal='100' />
+            <column datatype='integer' name='S.Bkhd' ordinal='101' />
+            <column datatype='integer' name='S.Dflct' ordinal='102' />
+            <column datatype='integer' name='S.Slap' ordinal='103' />
+            <column datatype='integer' name='S.Snap' ordinal='104' />
+            <column datatype='integer' name='S.Tip' ordinal='105' />
+            <column datatype='integer' name='S.Wrap' ordinal='106' />
+            <column datatype='integer' name='S.Wrst' ordinal='107' />
+            <column datatype='integer' name='iPenT' ordinal='108' />
+            <column datatype='integer' name='iPenD' ordinal='109' />
+            <column datatype='integer' name='iPENT' ordinal='110' />
+            <column datatype='integer' name='iPEND' ordinal='111' />
+            <column datatype='integer' name='iPenDf' ordinal='112' />
+            <column datatype='real' name='NPD' ordinal='113' />
+            <column datatype='integer' name='Min' ordinal='114' />
+            <column datatype='integer' name='Maj' ordinal='115' />
+            <column datatype='integer' name='Match' ordinal='116' />
+            <column datatype='integer' name='Misc' ordinal='117' />
+            <column datatype='integer' name='Game' ordinal='118' />
+            <column datatype='integer' name='CF' ordinal='119' />
+            <column datatype='integer' name='CA' ordinal='120' />
+            <column datatype='integer' name='FF' ordinal='121' />
+            <column datatype='integer' name='FA' ordinal='122' />
+            <column datatype='integer' name='SF' ordinal='123' />
+            <column datatype='integer' name='SA' ordinal='124' />
+            <column datatype='real' name='xGF' ordinal='125' />
+            <column datatype='real' name='xGA' ordinal='126' />
+            <column datatype='integer' name='SCF' ordinal='127' />
+            <column datatype='integer' name='SCA' ordinal='128' />
+            <column datatype='integer' name='GF' ordinal='129' />
+            <column datatype='integer' name='GA' ordinal='130' />
+            <column datatype='integer' name='RBF' ordinal='131' />
+            <column datatype='integer' name='RBA' ordinal='132' />
+            <column datatype='integer' name='RSF' ordinal='133' />
+            <column datatype='integer' name='RSA' ordinal='134' />
+            <column datatype='integer' name='DSF' ordinal='135' />
+            <column datatype='integer' name='DSA' ordinal='136' />
+            <column datatype='integer' name='FOW' ordinal='137' />
+            <column datatype='integer' name='FOL' ordinal='138' />
+            <column datatype='integer' name='HF' ordinal='139' />
+            <column datatype='integer' name='HA' ordinal='140' />
+            <column datatype='integer' name='GVA' ordinal='141' />
+            <column datatype='integer' name='TKA' ordinal='142' />
+            <column datatype='integer' name='PENT' ordinal='143' />
+            <column datatype='integer' name='PEND' ordinal='144' />
+            <column datatype='real' name='OPS' ordinal='145' />
+            <column datatype='real' name='DPS' ordinal='146' />
+            <column datatype='real' name='PS' ordinal='147' />
+            <column datatype='real' name='OTOI' ordinal='148' />
+            <column datatype='integer' name='Grit' ordinal='149' />
+            <column datatype='real' name='DAP' ordinal='150' />
+            <column datatype='real' name='Pace' ordinal='151' />
+            <column datatype='real' name='GS' ordinal='152' />
+            <column datatype='real' name='GS/G' ordinal='153' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salary]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Salary</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Born</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Born]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Born</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pr/St</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pr/St]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Pr/St</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cntry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cntry]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Cntry</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nat</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nat]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Nat</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ht</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ht]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Ht</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wt]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Wt</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DftYr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DftYr]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DftYr</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DftRd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DftRd]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DftRd</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ovrl</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ovrl]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Ovrl</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hand]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Hand</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Name]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Last Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[First Name]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>First Name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Position]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Position</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GP]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GP</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>A</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>A1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A2]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>A2</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PTS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PTS</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>+/-</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[+/-]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>+/-</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E+/-</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[E+/-]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>E+/-</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PIM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PIM]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PIM</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shifts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shifts]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Shifts</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOI]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TOI</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOIX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOIX]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TOIX</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOI/GP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOI/GP]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TOI/GP</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOI/GP 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOI/GP 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TOI/GP 1</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOI%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOI%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TOI%</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IPP%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IPP%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>IPP%</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SH%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SH%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SH%</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SV%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SV%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SV%</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PDO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PDO]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PDO</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F/60</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F/60]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>F/60</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A/60</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[A/60]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>A/60</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pct%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pct%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Pct%</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diff]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Diff</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diff/60</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Diff/60]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Diff/60</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iCF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iCF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iCF</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iCF 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iCF 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iCF 1</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iFF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iFF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iFF</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iSF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iSF</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iSF 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iSF 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iSF 1</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iSF 2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iSF 2]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iSF 2</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ixG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ixG]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>ixG</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iSCF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iSCF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iSCF</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iRB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iRB]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iRB</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iRS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iRS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iRS</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iDS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iDS</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sDist</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sDist]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>sDist</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sDist 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sDist 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>sDist 1</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pass</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pass]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Pass</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iHF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iHF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iHF</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iHF 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iHF 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iHF 1</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iHA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iHA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iHA</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iHDf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iHDf]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iHDf</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iMiss</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iMiss]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iMiss</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iGVA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iGVA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iGVA</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iTKA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iTKA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iTKA</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iBLK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iBLK]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iBLK</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iGVA 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iGVA 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iGVA 1</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iTKA 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iTKA 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iTKA 1</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iBLK 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iBLK 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iBLK 1</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLK%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BLK%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>BLK%</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iFOW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iFOW]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iFOW</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iFOL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iFOL]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iFOL</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iFOW 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iFOW 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iFOW 1</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iFOL 1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iFOL 1]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iFOL 1</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FO%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FO%]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FO%</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%FOT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[%FOT]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>%FOT</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dzFOW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dzFOW]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>dzFOW</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dzFOL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dzFOL]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>dzFOL</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nzFOW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nzFOW]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>nzFOW</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nzFOL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nzFOL]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>nzFOL</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ozFOW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ozFOW]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>ozFOW</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ozFOL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ozFOL]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>ozFOL</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOW.Up</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOW.Up]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOW.Up</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOL.Up</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOL.Up]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOL.Up</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOW.Down</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOW.Down]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOW.Down</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOL.Down</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOL.Down]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOL.Down</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOW.Close</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOW.Close]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOW.Close</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOL.Close</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOL.Close]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOL.Close</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OTG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OTG]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>OTG</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1G]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>1G</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GWG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GWG]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GWG</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENG]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>ENG</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PSG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PSG]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PSG</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PSA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PSA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PSA</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Bkhd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Bkhd]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Bkhd</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Dflct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Dflct]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Dflct</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Slap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Slap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Slap</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Snap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Snap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Snap</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Tip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Tip]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Tip</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Wrap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Wrap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Wrap</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G.Wrst</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G.Wrst]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>G.Wrst</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CBar </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CBar ]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>CBar </remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Post</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Post]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Post</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Over</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wide</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wide]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Wide</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Bkhd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Bkhd]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Bkhd</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Dflct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Dflct]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Dflct</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Slap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Slap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Slap</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Snap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Snap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Snap</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Tip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Tip]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Tip</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Wrap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Wrap]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Wrap</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>S.Wrst</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[S.Wrst]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>S.Wrst</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iPenT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iPenT]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iPenT</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iPenD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iPenD]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iPenD</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iPENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iPENT]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iPENT</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iPEND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iPEND]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iPEND</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iPenDf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[iPenDf]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>iPenDf</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPD</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NPD]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>NPD</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Min]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Min</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maj</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maj]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Maj</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Match</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Misc</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Misc]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Misc</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Game</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Game]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Game</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>CF</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>CA</remote-alias>
+            <ordinal>120</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FF</remote-alias>
+            <ordinal>121</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FA</remote-alias>
+            <ordinal>122</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SF</remote-alias>
+            <ordinal>123</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SA</remote-alias>
+            <ordinal>124</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xGF</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xGF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>xGF</remote-alias>
+            <ordinal>125</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xGA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xGA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>xGA</remote-alias>
+            <ordinal>126</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SCF</remote-alias>
+            <ordinal>127</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>SCA</remote-alias>
+            <ordinal>128</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GF</remote-alias>
+            <ordinal>129</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GA</remote-alias>
+            <ordinal>130</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RBF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>RBF</remote-alias>
+            <ordinal>131</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RBA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RBA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>RBA</remote-alias>
+            <ordinal>132</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RSF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>RSF</remote-alias>
+            <ordinal>133</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RSA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RSA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>RSA</remote-alias>
+            <ordinal>134</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DSF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DSF</remote-alias>
+            <ordinal>135</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DSA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DSA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DSA</remote-alias>
+            <ordinal>136</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOW</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOW]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOW</remote-alias>
+            <ordinal>137</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOL]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>FOL</remote-alias>
+            <ordinal>138</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HF]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>HF</remote-alias>
+            <ordinal>139</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>HA</remote-alias>
+            <ordinal>140</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GVA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GVA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GVA</remote-alias>
+            <ordinal>141</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TKA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TKA]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>TKA</remote-alias>
+            <ordinal>142</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PENT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PENT]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PENT</remote-alias>
+            <ordinal>143</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PEND]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PEND</remote-alias>
+            <ordinal>144</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OPS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>OPS</remote-alias>
+            <ordinal>145</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DPS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DPS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DPS</remote-alias>
+            <ordinal>146</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>PS</remote-alias>
+            <ordinal>147</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OTOI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OTOI]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>OTOI</remote-alias>
+            <ordinal>148</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grit]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Grit</remote-alias>
+            <ordinal>149</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DAP]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>DAP</remote-alias>
+            <ordinal>150</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pace</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pace]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>Pace</remote-alias>
+            <ordinal>151</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GS]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GS</remote-alias>
+            <ordinal>152</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GS/G</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GS/G]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>GS/G</remote-alias>
+            <ordinal>153</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='%Fot' datatype='real' name='[%FOT]' role='measure' type='quantitative' />
+      <column caption='Blk%' datatype='real' name='[BLK%]' role='measure' type='quantitative' />
+      <column caption='CBar' datatype='integer' name='[CBar ]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Dft Rd' datatype='integer' name='[DftRd]' role='measure' type='quantitative' />
+      <column caption='Dft Yr' datatype='integer' name='[DftYr]' role='dimension' type='quantitative' />
+      <column caption='Gs/G' datatype='real' name='[GS/G]' role='measure' type='quantitative' />
+      <column caption='Ipp%' datatype='real' name='[IPP%]' role='measure' type='quantitative' />
+      <column caption='Otoi' datatype='real' name='[OTOI]' role='measure' type='quantitative' />
+      <column caption='Pend' datatype='integer' name='[PEND]' role='measure' type='quantitative' />
+      <column caption='Pent' datatype='integer' name='[PENT]' role='measure' type='quantitative' />
+      <column caption='Toi%' datatype='real' name='[TOI%]' role='measure' type='quantitative' />
+      <column caption='Toi/Gp 1' datatype='real' name='[TOI/GP 1]' role='measure' type='quantitative' />
+      <column caption='Toi/Gp' datatype='real' name='[TOI/GP]' role='measure' type='quantitative' />
+      <column caption='Toix' datatype='real' name='[TOIX]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='nhl.csv' datatype='table' name='[__tableau_internal_object_id__].[nhl.csv_48EBFB41E2F9456885E922E42BC48EA9]' role='measure' type='quantitative' />
+      <column caption='Dz FOL' datatype='integer' name='[dzFOL]' role='measure' type='quantitative' />
+      <column caption='Dz FOW' datatype='integer' name='[dzFOW]' role='measure' type='quantitative' />
+      <column caption='I Blk' datatype='integer' name='[iBLK]' role='measure' type='quantitative' />
+      <column caption='I Cf' datatype='integer' name='[iCF]' role='measure' type='quantitative' />
+      <column caption='I Ds' datatype='integer' name='[iDS]' role='measure' type='quantitative' />
+      <column caption='I Ff' datatype='integer' name='[iFF]' role='measure' type='quantitative' />
+      <column caption='I Fol' datatype='integer' name='[iFOL]' role='measure' type='quantitative' />
+      <column caption='I Fow' datatype='integer' name='[iFOW]' role='measure' type='quantitative' />
+      <column caption='I Gva' datatype='integer' name='[iGVA]' role='measure' type='quantitative' />
+      <column caption='I Ha' datatype='integer' name='[iHA]' role='measure' type='quantitative' />
+      <column caption='I H Df' datatype='integer' name='[iHDf]' role='measure' type='quantitative' />
+      <column caption='I Hf' datatype='integer' name='[iHF]' role='measure' type='quantitative' />
+      <column caption='I Miss' datatype='integer' name='[iMiss]' role='measure' type='quantitative' />
+      <column caption='I Pend' datatype='integer' name='[iPEND]' role='measure' type='quantitative' />
+      <column caption='I Pent' datatype='integer' name='[iPENT]' role='measure' type='quantitative' />
+      <column caption='I Pen D' datatype='integer' name='[iPenD]' role='measure' type='quantitative' />
+      <column caption='I Pen Df' datatype='integer' name='[iPenDf]' role='measure' type='quantitative' />
+      <column caption='I Pen T' datatype='integer' name='[iPenT]' role='measure' type='quantitative' />
+      <column caption='I Rb' datatype='integer' name='[iRB]' role='measure' type='quantitative' />
+      <column caption='I Rs' datatype='integer' name='[iRS]' role='measure' type='quantitative' />
+      <column caption='I Scf' datatype='integer' name='[iSCF]' role='measure' type='quantitative' />
+      <column caption='I Sf' datatype='integer' name='[iSF]' role='measure' type='quantitative' />
+      <column caption='I Tka' datatype='integer' name='[iTKA]' role='measure' type='quantitative' />
+      <column caption='Ix G' datatype='real' name='[ixG]' role='measure' type='quantitative' />
+      <column caption='Nz FOL' datatype='integer' name='[nzFOL]' role='measure' type='quantitative' />
+      <column caption='Nz FOW' datatype='integer' name='[nzFOW]' role='measure' type='quantitative' />
+      <column caption='Oz FOL' datatype='integer' name='[ozFOL]' role='measure' type='quantitative' />
+      <column caption='Oz FOW' datatype='integer' name='[ozFOW]' role='measure' type='quantitative' />
+      <column caption='S Dist' datatype='real' name='[sDist]' role='measure' type='quantitative' />
+      <column caption='X Ga' datatype='real' name='[xGA]' role='measure' type='quantitative' />
+      <column caption='X Gf' datatype='real' name='[xGF]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='nhl.csv' id='nhl.csv_48EBFB41E2F9456885E922E42BC48EA9'>
+            <properties context=''>
+              <relation connection='textscan.0t4unyb12y3lcl1efegnd1b4wwqt' name='nhl.csv' table='[nhl#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Salary' ordinal='0' />
+                  <column datatype='date' name='Born' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='Pr/St' ordinal='3' />
+                  <column datatype='string' name='Cntry' ordinal='4' />
+                  <column datatype='string' name='Nat' ordinal='5' />
+                  <column datatype='integer' name='Ht' ordinal='6' />
+                  <column datatype='integer' name='Wt' ordinal='7' />
+                  <column datatype='integer' name='DftYr' ordinal='8' />
+                  <column datatype='integer' name='DftRd' ordinal='9' />
+                  <column datatype='integer' name='Ovrl' ordinal='10' />
+                  <column datatype='string' name='Hand' ordinal='11' />
+                  <column datatype='string' name='Last Name' ordinal='12' />
+                  <column datatype='string' name='First Name' ordinal='13' />
+                  <column datatype='string' name='Position' ordinal='14' />
+                  <column datatype='string' name='Team' ordinal='15' />
+                  <column datatype='integer' name='GP' ordinal='16' />
+                  <column datatype='integer' name='G' ordinal='17' />
+                  <column datatype='integer' name='A' ordinal='18' />
+                  <column datatype='integer' name='A1' ordinal='19' />
+                  <column datatype='integer' name='A2' ordinal='20' />
+                  <column datatype='integer' name='PTS' ordinal='21' />
+                  <column datatype='integer' name='+/-' ordinal='22' />
+                  <column datatype='real' name='E+/-' ordinal='23' />
+                  <column datatype='integer' name='PIM' ordinal='24' />
+                  <column datatype='integer' name='Shifts' ordinal='25' />
+                  <column datatype='integer' name='TOI' ordinal='26' />
+                  <column datatype='real' name='TOIX' ordinal='27' />
+                  <column datatype='real' name='TOI/GP' ordinal='28' />
+                  <column datatype='real' name='TOI/GP 1' ordinal='29' />
+                  <column datatype='real' name='TOI%' ordinal='30' />
+                  <column datatype='real' name='IPP%' ordinal='31' />
+                  <column datatype='real' name='SH%' ordinal='32' />
+                  <column datatype='real' name='SV%' ordinal='33' />
+                  <column datatype='integer' name='PDO' ordinal='34' />
+                  <column datatype='real' name='F/60' ordinal='35' />
+                  <column datatype='real' name='A/60' ordinal='36' />
+                  <column datatype='real' name='Pct%' ordinal='37' />
+                  <column datatype='integer' name='Diff' ordinal='38' />
+                  <column datatype='real' name='Diff/60' ordinal='39' />
+                  <column datatype='integer' name='iCF' ordinal='40' />
+                  <column datatype='integer' name='iCF 1' ordinal='41' />
+                  <column datatype='integer' name='iFF' ordinal='42' />
+                  <column datatype='integer' name='iSF' ordinal='43' />
+                  <column datatype='integer' name='iSF 1' ordinal='44' />
+                  <column datatype='integer' name='iSF 2' ordinal='45' />
+                  <column datatype='real' name='ixG' ordinal='46' />
+                  <column datatype='integer' name='iSCF' ordinal='47' />
+                  <column datatype='integer' name='iRB' ordinal='48' />
+                  <column datatype='integer' name='iRS' ordinal='49' />
+                  <column datatype='integer' name='iDS' ordinal='50' />
+                  <column datatype='real' name='sDist' ordinal='51' />
+                  <column datatype='real' name='sDist 1' ordinal='52' />
+                  <column datatype='real' name='Pass' ordinal='53' />
+                  <column datatype='integer' name='iHF' ordinal='54' />
+                  <column datatype='integer' name='iHF 1' ordinal='55' />
+                  <column datatype='integer' name='iHA' ordinal='56' />
+                  <column datatype='integer' name='iHDf' ordinal='57' />
+                  <column datatype='integer' name='iMiss' ordinal='58' />
+                  <column datatype='integer' name='iGVA' ordinal='59' />
+                  <column datatype='integer' name='iTKA' ordinal='60' />
+                  <column datatype='integer' name='iBLK' ordinal='61' />
+                  <column datatype='integer' name='iGVA 1' ordinal='62' />
+                  <column datatype='integer' name='iTKA 1' ordinal='63' />
+                  <column datatype='integer' name='iBLK 1' ordinal='64' />
+                  <column datatype='real' name='BLK%' ordinal='65' />
+                  <column datatype='integer' name='iFOW' ordinal='66' />
+                  <column datatype='integer' name='iFOL' ordinal='67' />
+                  <column datatype='integer' name='iFOW 1' ordinal='68' />
+                  <column datatype='integer' name='iFOL 1' ordinal='69' />
+                  <column datatype='real' name='FO%' ordinal='70' />
+                  <column datatype='real' name='%FOT' ordinal='71' />
+                  <column datatype='integer' name='dzFOW' ordinal='72' />
+                  <column datatype='integer' name='dzFOL' ordinal='73' />
+                  <column datatype='integer' name='nzFOW' ordinal='74' />
+                  <column datatype='integer' name='nzFOL' ordinal='75' />
+                  <column datatype='integer' name='ozFOW' ordinal='76' />
+                  <column datatype='integer' name='ozFOL' ordinal='77' />
+                  <column datatype='integer' name='FOW.Up' ordinal='78' />
+                  <column datatype='integer' name='FOL.Up' ordinal='79' />
+                  <column datatype='integer' name='FOW.Down' ordinal='80' />
+                  <column datatype='integer' name='FOL.Down' ordinal='81' />
+                  <column datatype='integer' name='FOW.Close' ordinal='82' />
+                  <column datatype='integer' name='FOL.Close' ordinal='83' />
+                  <column datatype='integer' name='OTG' ordinal='84' />
+                  <column datatype='integer' name='1G' ordinal='85' />
+                  <column datatype='integer' name='GWG' ordinal='86' />
+                  <column datatype='integer' name='ENG' ordinal='87' />
+                  <column datatype='integer' name='PSG' ordinal='88' />
+                  <column datatype='integer' name='PSA' ordinal='89' />
+                  <column datatype='integer' name='G.Bkhd' ordinal='90' />
+                  <column datatype='integer' name='G.Dflct' ordinal='91' />
+                  <column datatype='integer' name='G.Slap' ordinal='92' />
+                  <column datatype='integer' name='G.Snap' ordinal='93' />
+                  <column datatype='integer' name='G.Tip' ordinal='94' />
+                  <column datatype='integer' name='G.Wrap' ordinal='95' />
+                  <column datatype='integer' name='G.Wrst' ordinal='96' />
+                  <column datatype='integer' name='CBar ' ordinal='97' />
+                  <column datatype='integer' name='Post' ordinal='98' />
+                  <column datatype='integer' name='Over' ordinal='99' />
+                  <column datatype='integer' name='Wide' ordinal='100' />
+                  <column datatype='integer' name='S.Bkhd' ordinal='101' />
+                  <column datatype='integer' name='S.Dflct' ordinal='102' />
+                  <column datatype='integer' name='S.Slap' ordinal='103' />
+                  <column datatype='integer' name='S.Snap' ordinal='104' />
+                  <column datatype='integer' name='S.Tip' ordinal='105' />
+                  <column datatype='integer' name='S.Wrap' ordinal='106' />
+                  <column datatype='integer' name='S.Wrst' ordinal='107' />
+                  <column datatype='integer' name='iPenT' ordinal='108' />
+                  <column datatype='integer' name='iPenD' ordinal='109' />
+                  <column datatype='integer' name='iPENT' ordinal='110' />
+                  <column datatype='integer' name='iPEND' ordinal='111' />
+                  <column datatype='integer' name='iPenDf' ordinal='112' />
+                  <column datatype='real' name='NPD' ordinal='113' />
+                  <column datatype='integer' name='Min' ordinal='114' />
+                  <column datatype='integer' name='Maj' ordinal='115' />
+                  <column datatype='integer' name='Match' ordinal='116' />
+                  <column datatype='integer' name='Misc' ordinal='117' />
+                  <column datatype='integer' name='Game' ordinal='118' />
+                  <column datatype='integer' name='CF' ordinal='119' />
+                  <column datatype='integer' name='CA' ordinal='120' />
+                  <column datatype='integer' name='FF' ordinal='121' />
+                  <column datatype='integer' name='FA' ordinal='122' />
+                  <column datatype='integer' name='SF' ordinal='123' />
+                  <column datatype='integer' name='SA' ordinal='124' />
+                  <column datatype='real' name='xGF' ordinal='125' />
+                  <column datatype='real' name='xGA' ordinal='126' />
+                  <column datatype='integer' name='SCF' ordinal='127' />
+                  <column datatype='integer' name='SCA' ordinal='128' />
+                  <column datatype='integer' name='GF' ordinal='129' />
+                  <column datatype='integer' name='GA' ordinal='130' />
+                  <column datatype='integer' name='RBF' ordinal='131' />
+                  <column datatype='integer' name='RBA' ordinal='132' />
+                  <column datatype='integer' name='RSF' ordinal='133' />
+                  <column datatype='integer' name='RSA' ordinal='134' />
+                  <column datatype='integer' name='DSF' ordinal='135' />
+                  <column datatype='integer' name='DSA' ordinal='136' />
+                  <column datatype='integer' name='FOW' ordinal='137' />
+                  <column datatype='integer' name='FOL' ordinal='138' />
+                  <column datatype='integer' name='HF' ordinal='139' />
+                  <column datatype='integer' name='HA' ordinal='140' />
+                  <column datatype='integer' name='GVA' ordinal='141' />
+                  <column datatype='integer' name='TKA' ordinal='142' />
+                  <column datatype='integer' name='PENT' ordinal='143' />
+                  <column datatype='integer' name='PEND' ordinal='144' />
+                  <column datatype='real' name='OPS' ordinal='145' />
+                  <column datatype='real' name='DPS' ordinal='146' />
+                  <column datatype='real' name='PS' ordinal='147' />
+                  <column datatype='real' name='OTOI' ordinal='148' />
+                  <column datatype='integer' name='Grit' ordinal='149' />
+                  <column datatype='real' name='DAP' ordinal='150' />
+                  <column datatype='real' name='Pace' ordinal='151' />
+                  <column datatype='real' name='GS' ordinal='152' />
+                  <column datatype='real' name='GS/G' ordinal='153' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Points Production vs Salary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl' name='federated.1mc7fa50cdg0b91a5e66k1v2duw8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mc7fa50cdg0b91a5e66k1v2duw8'>
+            <column datatype='string' name='[Last Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[PTS]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Salary]' role='measure' type='quantitative' />
+            <column-instance column='[Last Name]' derivation='None' name='[none:Last Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PTS]' derivation='Sum' name='[sum:PTS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Salary]' derivation='Sum' name='[sum:Salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1mc7fa50cdg0b91a5e66k1v2duw8].[sum:PTS:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1mc7fa50cdg0b91a5e66k1v2duw8].[sum:Salary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mc7fa50cdg0b91a5e66k1v2duw8].[none:Last Name:nk]</rows>
+        <cols>([federated.1mc7fa50cdg0b91a5e66k1v2duw8].[sum:PTS:qk] + [federated.1mc7fa50cdg0b91a5e66k1v2duw8].[sum:Salary:qk])</cols>
+      </table>
+      <simple-id uuid='{528031F2-D91B-4CA1-8E43-8DC3C1AFA212}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1mc7fa50cdg0b91a5e66k1v2duw8].[none:Last Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9E6E704B-F3A8-4D6B-BF16-EF623BA07083}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
